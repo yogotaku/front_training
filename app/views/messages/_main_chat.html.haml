@@ -13,7 +13,6 @@
   %article.messages
     = render @messages
 
-
   .form
     = form_with model: [@group, @message], html: { class: 'form__fields' }, local: true do |f|
       = f.text_field :content, placeholder: 'type a message', class: 'form__content'
